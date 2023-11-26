@@ -1,0 +1,55 @@
+.Box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contentContainer {
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  margin: 10rem;
+  background-color: white;
+}
+
+#qrCode {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-wrap: wrap;
+  margin: 4px 0;
+  color: var(--dark-blue);
+}
+
+p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+  color: var(--grayish-blue);
+}
+
+@media screen and (max-width: 1440px) {
+  .contentContainer {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #qrCode {
+    width: 250px;
+    height: 250px;
+  }
+  .contentContainer {
+    margin: 2rem;
+  }
+  .Box {
+    margin: 0;
+  }
+}
